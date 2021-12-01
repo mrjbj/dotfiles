@@ -2,9 +2,18 @@
 alias copyssh="pbcopy < $HOME/.ssh/id_ed25519.pub"
 alias reloadshell="source $HOME/.zshrc"
 alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
-alias ll="/opt/homebrew/opt/coreutils/libexec/gnubin/ls -AhlFo --color --group-directories-first"
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 alias c="clear"
+
+# list aliases
+alias ll="/opt/homebrew/opt/coreutils/libexec/gnubin/ls -AhlFo --color=auto --group-directories-first"
+alias ldot='ls -ld .* --color=auto'
+alias l="ls -lFh --color=auto"
+alias la="ls -lAFh --color=auto"
+alias lr="ls -tRFh --color=auto"
+alias lS="ls -1FSsh --color=auto"
+alias lart="ls -1Fcart --color=auto"
+alias lrt="ls -1Fcrt --color=auto"
 
 # Directories
 alias m="marks"
@@ -28,5 +37,3 @@ alias stash="git stash -u"
 alias unstage="git restore --staged ."
 alias wip="commit wip"
 
-# test
-alias foo2="echo 'set in zsh_custom/aliases.zsh'"
