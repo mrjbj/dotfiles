@@ -1,0 +1,5 @@
+[user]
+	name = Jason Jones
+	email = jason@brucejones.biz
+[init]
+	defaultBranch = main
