@@ -6,4 +6,3 @@ export PATH="$HOME/.emacs.d/bin:$PATH"
 
 # Core binaries to replace older Mac Versions 
 export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
-
