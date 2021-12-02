@@ -18,7 +18,7 @@ alias lrt="ls -1Fcrt --color=auto"
 # Directories
 alias m="marks"
 alias j="jump"
-
+alias dh="dirs -v"
 # Git
 alias gst="git status"
 alias gb="git branch"
