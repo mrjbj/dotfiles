@@ -26,3 +26,8 @@ setopt share_history          # share history with other sessions
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+
+#-------------------------
+# SSL identity for github
+#-------------------------
+ssh-add ~/.ssh/id_rsa_github
