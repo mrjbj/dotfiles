@@ -13,6 +13,7 @@ ZSH_CUSTOM=$DOTFILES/ZSH_CUSTOM        # will source *.zsh after oh-my-zsh.zsh
 # completions
 #-------------
 FPATH="/opt/homebrew/share/zsh/site-functions:${FPATH}"
+ZSH_DISABLE_COMPFIX=true               # testing...
 _comp_options+=(globdots)              # apply completions to .dotfiles
 autoload -Uz compinit && compinit      # enable completions
 
