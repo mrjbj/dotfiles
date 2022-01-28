@@ -1,0 +1,16 @@
+#!/bin/bash
+# try and setup preferred development strategy
+#- iex
+tmux new-session -s dev  -n iex -d 'cd  /Users/jasonjones/GitData/mondo-crypto; zsh -i'
+#- mondo-crypto src 
+tmux new-window -t dev:2 -n mondo  'cd /Users/jasonjones/GitData/mondo-crypto; zsh  -i'
+#- psql 
+tmux new-window -t dev:3 -n psql 'cd /Users/jasonjones/GitData/mondo-crypto; zsh -i'
+# livebook
+tmux new-window -t dev:4 -n livebook 'cd /Users/jasonjones/GitData/livebooks; zsh -i'
+# testing 
+tmux new-window -t dev:5 -n testing 'cd /Users/jasonjones/GitData/mondo-crypto; zsh -i'
+# zsh 
+tmux new-window -t dev:6 -n home 'cd /Users/jasonjones; zsh -i'
+tmux select-window -t dev:1
+tmux -2 attach-session -t dev 

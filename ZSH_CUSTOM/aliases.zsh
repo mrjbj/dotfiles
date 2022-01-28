@@ -47,5 +47,6 @@ alias unstage="git restore --staged ."
 alias wip="commit wip"
 
 # jbj misc
-alias livebook="$(asdf where elixir)/.mix/escripts/livebook server"
+alias livebook='$(asdf where elixir)/.mix/escripts/livebook server'
 alias lsd="ls -ld .*"
+alias dev="~/tmux.dev"

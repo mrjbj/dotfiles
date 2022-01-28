@@ -21,3 +21,6 @@ jsplit() {
     echo $1 | tr : \\n
 }
 
+has-session() {
+    tmux has-session -t dev 2>/dev/null
+}
