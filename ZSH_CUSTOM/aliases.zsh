@@ -50,5 +50,5 @@ alias wip="commit wip"
 alias livebook='$(asdf where elixir)/.mix/escripts/livebook server'
 alias lsd="ls -ld .*"
 alias dev="~/tmux.dev"
-alias via="~/.dotfiles/ZSH_CUSTOM/aliases.zsh"
-alias jsql="./mypsql"
+alias via=" vi ~/.dotfiles/ZSH_CUSTOM/aliases.zsh"
+alias jsql="./mypsql.sh"
