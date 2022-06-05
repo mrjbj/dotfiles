@@ -17,6 +17,16 @@ mdf() {
         fi
 }
 
+j() {
+        if [ -n "$1" ]
+        then 
+                jump $1
+        else
+               marks 
+        fi
+}
+
+
 jsplit() {
     echo $1 | tr : \\n
 }

@@ -1,3 +1,5 @@
+# Fig pre block. Keep at the top of this file.
+. "$HOME/.fig/shell/zshrc.pre.zsh"
 # 1. zshrc file loaded by zshell for interactive shells
 # 2. this sets up oh-my-zsh and then sources $(ZSH_CUSTOM/*.zsh)
 
@@ -40,4 +42,5 @@ bindkey -M viins 'jk' vi-cmd-mode
 #----------
 source $ZSH/oh-my-zsh.sh
 
-
+# Fig post block. Keep at the bottom of this file.
+. "$HOME/.fig/shell/zshrc.post.zsh"

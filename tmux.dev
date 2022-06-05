@@ -1,15 +1,15 @@
 #!/bin/bash
 # try and setup preferred development strategy
 #- iex
-tmux new-session -s dev  -n iex -d 'cd  /Users/jasonjones/GitData/mondo-crypto; zsh -i'
+tmux new-session -s dev  -n iex -d 'cd  /Users/jasonjones/GitData/mondo-trax; zsh -i'
 #- mondo-crypto src 
-tmux new-window -t dev:2 -n mondo  'cd /Users/jasonjones/GitData/mondo-crypto; zsh  -i'
+tmux new-window -t dev:2 -n mondo  'cd /Users/jasonjones/GitData/mondo-trax; zsh  -i'
 #- psql 
-tmux new-window -t dev:3 -n psql 'cd /Users/jasonjones/GitData/mondo-crypto; zsh -i'
+tmux new-window -t dev:3 -n psql 'cd /Users/jasonjones/GitData/mondo-trax; zsh -i'
 # livebook
-tmux new-window -t dev:4 -n livebook 'cd /Users/jasonjones/GitData/livebooks; zsh -i'
+tmux new-window -t dev:4 -n livebook 'cd /Users/jasonjones/GitData/livebooks2; zsh -i'
 # testing 
-tmux new-window -t dev:5 -n testing 'cd /Users/jasonjones/GitData/mondo-crypto; zsh -i'
+tmux new-window -t dev:5 -n testing 'cd /Users/jasonjones/GitData/mondo-trax; zsh -i'
 # zsh 
 tmux new-window -t dev:6 -n home 'cd /Users/jasonjones; zsh -i'
 tmux select-window -t dev:1

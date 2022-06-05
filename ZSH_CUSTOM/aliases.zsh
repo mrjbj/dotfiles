@@ -16,8 +16,8 @@ alias lart="ls -1Fcart --color=auto"
 alias lrt="ls -1Fcrt --color=auto"
 
 # Directories
-alias m="marks"
-alias j="jump"
+alias m="mark"
+#alias j="marks"
 alias dh="dirs -v | head -10"
 alias 1="cd -"
 alias 2="cd ~2"
