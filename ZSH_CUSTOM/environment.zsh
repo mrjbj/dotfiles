@@ -1,4 +1,9 @@
 #----------
+# Postgres 
+#----------
+export DB_PASSWORD="Ringo!@5";
+
+#----------
 # Brew 
 #----------
 export HOMEBREW_PREFIX="/opt/homebrew";
@@ -19,13 +24,11 @@ setopt HIST_SAVE_NO_DUPS
 setopt inc_append_history     #save command to history when running
 setopt share_history          # share history with other sessions 
 
-
 #----------
 # char encoding 
 #----------
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
-
 
 #-------------------------
 # SSL identity for github
