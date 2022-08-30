@@ -1,16 +1,18 @@
 #!/bin/bash
 # try and setup preferred development strategy
+#- viex
+tmux new-session -s dev  -n viex -d 'cd  /Users/jasonjones/GitData/mondo-trax2; zsh -i'
 #- iex
-tmux new-session -s dev  -n iex -d 'cd  /Users/jasonjones/GitData/mondo-trax; zsh -i'
+tmux new-session -s dev:2  -n iex -d 'cd  /Users/jasonjones/GitData/mondo-trax2; zsh -i'
 #- mondo-crypto src 
-tmux new-window -t dev:2 -n mondo  'cd /Users/jasonjones/GitData/mondo-trax; zsh  -i'
+tmux new-window -t dev:3 -n mondo  'cd /Users/jasonjones/GitData/mondo-trax2; zsh  -i'
 #- psql 
-tmux new-window -t dev:3 -n psql 'cd /Users/jasonjones/GitData/mondo-trax; zsh -i'
+tmux new-window -t dev:4 -n psql 'cd /Users/jasonjones/GitData/mondo-trax2; zsh -i'
 # livebook
-tmux new-window -t dev:4 -n livebook 'cd /Users/jasonjones/GitData/livebooks2; zsh -i'
+tmux new-window -t dev:5 -n livebook 'cd /Users/jasonjones/GitData/livebooks2; zsh -i'
 # testing 
-tmux new-window -t dev:5 -n testing 'cd /Users/jasonjones/GitData/mondo-trax; zsh -i'
+tmux new-window -t dev:6 -n testing 'cd /Users/jasonjones/GitData/mondo-trax2; zsh -i'
 # zsh 
-tmux new-window -t dev:6 -n home 'cd /Users/jasonjones; zsh -i'
+tmux new-window -t dev:7 -n home 'cd /Users/jasonjones; zsh -i'
 tmux select-window -t dev:1
 tmux -2 attach-session -t dev 

@@ -1,1 +1,1 @@
-source  /opt/homebrew/opt/asdf/asdf.sh
+source $HOME/.asdf/asdf.sh

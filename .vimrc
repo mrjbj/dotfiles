@@ -1,5 +1,5 @@
 syntax on
-colorscheme delek
+colorscheme darcula 
 set tabstop=4
 set softtabstop=4
 set expandtab
