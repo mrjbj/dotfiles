@@ -3,7 +3,7 @@
 #- viex
 tmux new-session -s dev  -n viex -d 'cd  /Users/jasonjones/GitData/mondo-trax2; zsh -i'
 #- iex
-tmux new-session -s dev:2  -n iex -d 'cd  /Users/jasonjones/GitData/mondo-trax2; zsh -i'
+tmux new-window -t dev:2  -n iex -d 'cd  /Users/jasonjones/GitData/mondo-trax2; zsh -i'
 #- mondo-crypto src 
 tmux new-window -t dev:3 -n mondo  'cd /Users/jasonjones/GitData/mondo-trax2; zsh  -i'
 #- psql 
