@@ -25,6 +25,7 @@ set lazyredraw
 set showmatch
 set incsearch
 set hlsearch
+set nowrap
 " space + CR turns off highlighted search
 noremap <leader><space> :nohlsearch<CR>
 inoremap <special> jk <ESC>

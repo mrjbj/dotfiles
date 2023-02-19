@@ -34,6 +34,7 @@ export VI_MODE_PROMPT_ON_MODE_CHANGE=true
 export VI_MODE_SET_CURSOR=true
 export MODE_INDICATOR="%F{yellow}+%f"
 export KEYTIMEOUT=10
+export TERM="xterm-256color"
 bindkey -M viins 'jk' vi-cmd-mode
 #----------
 # activate omz 
