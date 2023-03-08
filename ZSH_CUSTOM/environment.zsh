@@ -4,7 +4,32 @@
 export DB_PASSWORD="Ringo!@5";
 
 #----------
-# Brew 
+# Elixir 
+# asdf where elixir
+#----------
+export ELIXIR_PATH=/Users/jasonjones/.asdf/installs/elixir/1.14.3-otp-25
+
+#----------
+# erlang 
+#----------
+export KERL_BUILD_DOCS=yes
+export KERL_INSTALL_HTMLDOCS=yes
+export KERL_INSTALL_MANPAGES=yes
+
+#----------
+# unixODBC 
+#----------
+export DYLD_LIBRARY_PATH=/opt/homebrew/lib:$DYLD_LIBRARY_PATH
+
+#----------
+# Java
+#----------
+export JAVA_HOME="/opt/homebrew/opt/openjdk/libexec/openjdk.jdk/Contents/Home"
+# needed to allow access to private variables for reflection in jshell
+export MAVEN_OPTS="--add-opens java.base/java.lang=ALL-UNNAMED"
+
+#----------
+# Brew
 #----------
 export HOMEBREW_PREFIX="/opt/homebrew";
 export HOMEBREW_CELLAR="/opt/homebrew/Cellar";
