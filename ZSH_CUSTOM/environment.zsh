@@ -8,6 +8,7 @@ export DB_PASSWORD="Ringo!@5";
 # asdf where elixir
 #----------
 export ELIXIR_PATH=/Users/jasonjones/.asdf/installs/elixir/1.14.3-otp-25
+export LIVEBOOK_PASSWORD="Ringo!@5"
 
 #----------
 # erlang 
@@ -31,12 +32,13 @@ export MAVEN_OPTS="--add-opens java.base/java.lang=ALL-UNNAMED"
 #----------
 # Brew
 #----------
-export HOMEBREW_PREFIX="/opt/homebrew";
-export HOMEBREW_CELLAR="/opt/homebrew/Cellar";
-export HOMEBREW_REPOSITORY="/opt/homebrew";
-export HOMEBREW_SHELLENV_PREFIX="/opt/homebrew";
-export MANPATH="/opt/homebrew/share/man${MANPATH+:$MANPATH}:";
-export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
+eval "$(brew shellenv)"
+#export HOMEBREW_PREFIX="/opt/homebrew";
+#export HOMEBREW_CELLAR="/opt/homebrew/Cellar";
+#export HOMEBREW_REPOSITORY="/opt/homebrew";
+#export HOMEBREW_SHELLENV_PREFIX="/opt/homebrew";
+#export MANPATH="/opt/homebrew/share/man${MANPATH+:$MANPATH}:";
+#export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
 
 #----------
 # history
