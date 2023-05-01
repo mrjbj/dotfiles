@@ -39,4 +39,6 @@ bindkey -M viins 'jk' vi-cmd-mode
 #----------
 # activate omz 
 #----------
+# put completion cache files out of home directory
+export ZSH_COMPDUMP=$ZSH/cache/completions/.zcompdump-$HOST
 source $ZSH/oh-my-zsh.sh
