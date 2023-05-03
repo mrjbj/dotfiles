@@ -7,7 +7,7 @@ export DB_PASSWORD="Ringo!@5";
 # Elixir 
 # asdf where elixir
 #----------
-export ELIXIR_PATH=/Users/jasonjones/.asdf/installs/elixir/1.14.3-otp-25
+export ELIXIR_PATH="$HOME/.asdf/installs/elixir/1.14.3-otp-25"
 export LIVEBOOK_PASSWORD="Ringo!@5"
 
 #----------
@@ -32,7 +32,7 @@ export MAVEN_OPTS="--add-opens java.base/java.lang=ALL-UNNAMED"
 #----------
 # Brew
 #----------
-eval "$(brew shellenv)"
+# eval "$(brew shellenv)"
 #export HOMEBREW_PREFIX="/opt/homebrew";
 #export HOMEBREW_CELLAR="/opt/homebrew/Cellar";
 #export HOMEBREW_REPOSITORY="/opt/homebrew";
@@ -57,7 +57,12 @@ setopt share_history          # share history with other sessions
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+#----------
+# updatedb 
+#----------
+export PRUNEPATHS="/run"
+
 #-------------------------
-# SSL identity for github
+# SSL identity for github 
 #-------------------------
 ssh-add ~/.ssh/id_rsa_github

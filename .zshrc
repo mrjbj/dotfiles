@@ -12,7 +12,7 @@ ZSH_CUSTOM=$DOTFILES/ZSH_CUSTOM        # will source *.zsh after oh-my-zsh.zsh
 #---------------
 # completions
 #-------------
-FPATH="/opt/homebrew/share/zsh/site-functions:${FPATH}"
+#FPATH="/opt/homebrew/share/zsh/site-functions:${FPATH}"
 ZSH_DISABLE_COMPFIX=true               # testing...
 _comp_options+=(globdots)              # apply completions to .dotfiles
 autoload -Uz compinit && compinit      # enable completions
@@ -21,12 +21,12 @@ autoload -Uz compinit && compinit      # enable completions
 # theme
 #-------------
 ZSH_THEME=agnoster
-DEFAULT_USER=jasonjones
+DEFAULT_USER=mrjbj
 prompt_context(){}
 #----------
 # Plugins 
 #----------
-plugins=(git colored-man-pages common-aliases emacs emoji-clock jump sudo vi-mode)
+plugins=(git colored-man-pages common-aliases emacs emoji-clock jump sudo vi-mode colorize)
 #----------
 # vi-mode
 #---------
@@ -42,3 +42,6 @@ bindkey -M viins 'jk' vi-cmd-mode
 # put completion cache files out of home directory
 export ZSH_COMPDUMP=$ZSH/cache/completions/.zcompdump-$HOST
 source $ZSH/oh-my-zsh.sh
+
+eval $(dircolors -p | sed -e 's/DIR 01;34/DIR 01;36/' | dircolors /dev/stdin)
+

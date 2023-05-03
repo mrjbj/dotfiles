@@ -6,7 +6,7 @@ alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 alias c="clear"
 
 # list aliases
-alias ll="/opt/homebrew/opt/coreutils/libexec/gnubin/ls -AhlFo --color=auto --group-directories-first"
+alias ll="ls -AhlFo --color=auto --group-directories-first"
 alias ldot='ls -ld .* --color=auto'
 alias l="ls -lFh --color=auto"
 alias la="ls -lAFh --color=auto"
