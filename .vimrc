@@ -1,4 +1,5 @@
-call plug#begin('~/.vim/plugged')
+set runtimepath+=/.dotfiles/.vim
+call plug#begin('~/.dotfiles/.vim/plugged')
  Plug 'sainnhe/everforest'
 call plug#end()
 
@@ -7,6 +8,7 @@ if has('termguicolors')
         set termguicolors
 endif
 
+set background=dark
 let g:everforest_background = 'medium'
 let g:everforest_better_performance = 1
 colorscheme everforest 

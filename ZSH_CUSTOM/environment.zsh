@@ -7,7 +7,7 @@ export DB_PASSWORD="Ringo!@5";
 # Elixir 
 # asdf where elixir
 #----------
-export ELIXIR_PATH=/Users/jasonjones/.asdf/installs/elixir/1.14.3-otp-25
+export ELIXIR_PATH="$HOME/.asdf/installs/elixir/1.14.3-otp-25"
 export LIVEBOOK_PASSWORD="Ringo!@5"
 
 #----------
