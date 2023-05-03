@@ -2,7 +2,7 @@ set runtimepath+=~/.dotfiles/.vim
 call plug#begin('~/.dotfiles/.vim/plugged')
  Plug 'sainnhe/everforest'
 call plug#end()
-set display theme
+"set display theme
 if has('termguicolors')
         set termguicolors
 endif
