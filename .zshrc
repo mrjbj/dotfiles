@@ -41,7 +41,9 @@ export MODE_INDICATOR="%F{yellow}+%f"
 export KEYTIMEOUT=10
 export TERM="xterm-256color"
 bindkey -M viins 'jk' vi-cmd-mode
-bindkey '^I' forward-char 
+bindkey -M viins '^I' forward-char
+bindkey '^R' history-incremental-search-backward
+bindkey '^F' menu-select 
 #----------
 # activate omz 
 #----------
