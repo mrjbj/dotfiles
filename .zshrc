@@ -1,9 +1,9 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+#if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+#  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+#fi
 
 # 1. zshrc file loaded by zshell for interactive shells
 # 2. this sets up oh-my-zsh and then sources $(ZSH_CUSTOM/*.zsh)
@@ -41,6 +41,7 @@ export MODE_INDICATOR="%F{yellow}+%f"
 export KEYTIMEOUT=10
 export TERM="xterm-256color"
 bindkey -M viins 'jk' vi-cmd-mode
+bindkey '^I' forward-char 
 #----------
 # activate omz 
 #----------
