@@ -43,7 +43,7 @@ export TERM="xterm-256color"
 bindkey -M viins 'jk' vi-cmd-mode
 bindkey -M viins '^I' forward-char
 bindkey '^R' history-incremental-search-backward
-bindkey '^F' menu-select 
+bindkey -M viins '^F' menu-select 
 #----------
 # activate omz 
 #----------

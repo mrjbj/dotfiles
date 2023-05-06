@@ -29,7 +29,7 @@ export MAVEN_OPTS="--add-opens java.base/java.lang=ALL-UNNAMED"
 # history
 #----------
 HIST_STAMPS="yyyy-mm-dd"
-HISTFILE="$DOTFILES/.zhistory"
+HISTFILE="$HOME/.zhistory"
 HISTSIZE=100000
 SAVEHIST=1000000
 setopt HIST_SAVE_NO_DUPS
