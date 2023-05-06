@@ -6,14 +6,23 @@ alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 alias c="clear"
 
 # list aliases
-alias ll="ls -AhlFo --color=auto --group-directories-first"
-alias ldot='ls -ld .* --color=auto'
-alias l="ls -lFh --color=auto"
-alias la="ls -lAFh --color=auto"
-alias lr="ls -tRFh --color=auto"
-alias lS="ls -1FSsh --color=auto"
-alias lart="ls -1Fcart --color=auto"
-alias lrt="ls -1Fcrt --color=auto"
+#alias ll="ls -AhlFo --color=auto --group-directories-first"
+#alias ldot='ls -ld .* --color=auto'
+#alias l="ls -lFh --color=auto"
+#alias la="ls -lAFh --color=auto"
+#alias lr="ls -tRFh --color=auto"
+#alias lS="ls -1FSsh --color=auto"
+#alias lart="ls -1Fcart --color=auto"
+#alias lrt="ls -1Fcrt --color=auto"
+
+alias ll="colorls -Ahlo" 
+alias ldot="colorls -ld .*" 
+alias l="colorls -lh" 
+alias la="colorls -lAh" 
+alias lr="colorls -tRh" 
+alias ls="colorls" 
+alias lart="colorls -1cart" 
+alias lrt="colorls -1crt" 
 
 # Directories
 alias m="mark"

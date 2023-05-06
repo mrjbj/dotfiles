@@ -1,6 +1,12 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # 1. zshrc file loaded by zshell for interactive shells
 # 2. this sets up oh-my-zsh and then sources $(ZSH_CUSTOM/*.zsh)
-
 export DOTFILES=$HOME/.dotfiles
 
 #-----------------
@@ -19,13 +25,13 @@ autoload -Uz compinit && compinit      # enable completions
 #--------------
 # theme
 #-------------
-ZSH_THEME=agnoster
+ZSH_THEME=powerlevel10k/powerlevel10k
 DEFAULT_USER=mrjbj
 prompt_context(){}
 #----------
 # Plugins 
 #----------
-plugins=(git colored-man-pages common-aliases emacs emoji-clock jump sudo vi-mode)
+plugins=(git colored-man-pages common-aliases emacs emoji-clock jump sudo vi-mode zsh-syntax-highlighting zsh-autosuggestions)
 #----------
 # vi-mode
 #---------
@@ -44,3 +50,5 @@ source $ZSH/oh-my-zsh.sh
 
 eval $(dircolors -p | sed -e 's/DIR 01;34/DIR 01;36/' | dircolors /dev/stdin)
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
