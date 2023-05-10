@@ -15,11 +15,17 @@ alias c="clear"
 #alias lart="ls -1Fcart --color=auto"
 #alias lrt="ls -1Fcrt --color=auto"
 
-alias ll="colorls -hlo" 
+alias gpgrobo="gpg --decrypt ~/.ssh/RfExport.csv.gpg | vim -"
+alias l="colorls" 
+alias la="colorls -A" 
+alias ll="colorls -l" 
 alias lla="colorls -Ahlo" 
+
+alias lt="colorls --tree" 
+alias ltd="colorls --tree -d" 
+
+
 alias ldot="colorls -ld .*" 
-alias l="colorls -lh" 
-alias la="colorls -lAh" 
 alias lr="colorls -tRh" 
 alias ls="colorls" 
 alias lart="colorls -1cart" 
@@ -40,6 +46,7 @@ alias 8="cd ~8"
 alias 9="cd ~9"
 
 # jbj misc
+alias vi="vim"
 alias livebook='$(asdf where elixir)/.mix/escripts/livebook server'
 alias lsd="ls -ld .*"
 alias dev="~/tmux.dev"
