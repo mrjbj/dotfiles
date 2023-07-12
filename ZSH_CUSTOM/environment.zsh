@@ -1,4 +1,8 @@
 #----------
+# Editor  
+#----------
+export EDITOR=/opt/homebrew/bin/nvim
+#----------
 # Postgres 
 #----------
 export DB_PASSWORD="Ringo!@5";
@@ -7,8 +11,8 @@ export DB_PASSWORD="Ringo!@5";
 # Elixir 
 # asdf where elixir
 #----------
-export ELIXIR_PATH="$HOME/.asdf/installs/elixir/1.14.3-otp-25"
-export LIVEBOOK_PASSWORD="Ringo!@5"
+export ELIXIR_PATH="$HOME/.asdf/installs/elixir/1.15.2-otp-26"
+export LIVEBOOK_PASSWORD="RingoRingo123"
 
 #----------
 # erlang 
