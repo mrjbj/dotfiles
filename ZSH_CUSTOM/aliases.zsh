@@ -40,6 +40,7 @@ alias via=" vi ~/.dotfiles/ZSH_CUSTOM/aliases.zsh"
 alias vie=" vi ~/.dotfiles/ZSH_CUSTOM/environment.zsh"
 alias vit=" vi ~/.dotfiles/.tmux.conf"
 alias vik=" vi ~/.config/kitty/kitty.conf"
+alias vil=" vi ~/.config/nvim/init.lua"
 alias viex="rlwrap -afoo iex"
 alias r="ranger"
 # java aliases
