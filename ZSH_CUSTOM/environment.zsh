@@ -60,7 +60,7 @@ export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
 # history
 #----------
 HIST_STAMPS="yyyy-mm-dd"
-HISTFILE="$DOTFILES/.zhistory"
+HISTFILE="$HOME/.zhistory"
 HISTSIZE=100000
 SAVEHIST=1000000
 setopt HIST_SAVE_NO_DUPS
