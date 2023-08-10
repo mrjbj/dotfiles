@@ -13,7 +13,7 @@ config.hide_tab_bar_if_only_one_tab = true
 config.leader = { key = "Space", mods = "CTRL|SHIFT" }
 config.use_dead_keys = false
 config.warn_about_missing_glyphs = true
-config.font_size = 20.0
+config.font_size = 18.0
 -- fonts
 config.font = wezterm.font({
 	family = "FiraCode Nerd Font",
