@@ -1,3 +1,6 @@
+# path for wezterm
+export PATH="/Applications/WezTerm.app/Contents/MacOS:$PATH";
+
 # path for brew 
 export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH";
 
