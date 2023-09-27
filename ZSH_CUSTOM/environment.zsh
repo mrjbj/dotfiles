@@ -30,13 +30,6 @@ export HEX_HOME="${XDG_DATA_HOME}/hex"
 export LIVEBOOK_PASSWORD="RingoRingo123"
 
 #----------
-# erlang 
-#----------
-export KERL_BUILD_DOCS=yes
-export KERL_INSTALL_HTMLDOCS=yes
-export KERL_INSTALL_MANPAGES=yes
-
-#----------
 # unixODBC 
 #----------
 export DYLD_LIBRARY_PATH=/opt/homebrew/lib:$DYLD_LIBRARY_PATH
