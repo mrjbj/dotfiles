@@ -43,3 +43,5 @@ bindkey -M viins 'jk' vi-cmd-mode
 export ZSH_COMPDUMP=$ZSH/cache/completions/.zcompdump-$HOST
 source $ZSH/oh-my-zsh.sh
 cd ~/GitData
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
