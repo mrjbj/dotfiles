@@ -3,3 +3,5 @@
 	email = jason@brucejones.biz
 [init]
 	defaultBranch = main
+[credential]
+	help = store
