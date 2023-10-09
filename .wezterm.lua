@@ -55,5 +55,7 @@ config.keys = {
 
 	-- Scrool to top
 	{ key = "Home", mods = "SHIFT", action = act.ScrollToTop },
+	{ key = "H", mods = "CTRL|SHIFT", action = act.ActivateWindowRelative(-1) },
+	{ key = "L", mods = "CTRL|SHIFT", action = act.ActivateWindowRelative(1) },
 }
 return config
