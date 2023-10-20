@@ -29,33 +29,26 @@ config.font = wezterm.font({
 	style = "Normal",
 	harfbuzz_features = { "liga=1", "cv14", "cv24", "ss03", "ss04", "ss05", "ss07" },
 })
-
+config.unzoom_on_switch_pane = true
 --keys
 config.keys = {
-	-- Scroll up 1 line
-	{ key = "UpArrow", mods = "SHIFT", action = act.ScrollByLine(-1) },
-
-	-- Scroll down 1 line
-	{ key = "DownArrow", mods = "SHIFT", action = act.ScrollByLine(1) },
-
-	-- Scrool to bottom
+	-- Scrolling
+	{ key = "UpArrow", mods = "SHIFT", action = act.ScrollByLine(-15) },
+	{ key = "DownArrow", mods = "SHIFT", action = act.ScrollByLine(15) },
 	{ key = "End", mods = "SHIFT", action = act.ScrollToBottom },
-
-	-- Scrool to top
 	{ key = "Home", mods = "SHIFT", action = act.ScrollToTop },
-
-	-- Scroll up 1 line
-	{ key = "UpArrow", mods = "SHIFT", action = act.ScrollByLine(-1) },
-
-	-- Scroll down 1 line
-	{ key = "DownArrow", mods = "SHIFT", action = act.ScrollByLine(1) },
-
-	-- Scrool to bottom
-	{ key = "End", mods = "SHIFT", action = act.ScrollToBottom },
-
-	-- Scrool to top
-	{ key = "Home", mods = "SHIFT", action = act.ScrollToTop },
-	{ key = "H", mods = "CTRL|SHIFT", action = act.ActivateWindowRelative(-1) },
-	{ key = "L", mods = "CTRL|SHIFT", action = act.ActivateWindowRelative(1) },
+	-- switch between window
+	-- { key = "H",         mods = "CTRL|SHIFT", action = act.ActivateWindowRelative(-1) },
+	-- { key = "L",        mods = "CTRL|SHIFT", action = act.ActivateWindowRelative(1) },
+	-- switch panes
+	{ key = "H", mods = "CTRL|SHIFT", action = act.ActivatePaneDirection("Left") },
+	{ key = "L", mods = "CTRL|SHIFT", action = act.ActivatePaneDirection("Right") },
+	{ key = "K", mods = "CTRL|SHIFT", action = act.ActivatePaneDirection("Up") },
+	{ key = "J", mods = "CTRL|SHIFT", action = act.ActivatePaneDirection("Down") },
+	{
+		key = "|",
+		mods = "CTRL|SHIFT",
+		action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
+	},
 }
 return config

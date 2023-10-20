@@ -28,6 +28,7 @@ export ELIXIR_PATH="$HOME/.asdf/installs/elixir/1.15.2-otp-26"
 export MIX_HOME="${XDG_DATA_HOME}/mix"
 export HEX_HOME="${XDG_DATA_HOME}/hex"
 export LIVEBOOK_PASSWORD="RingoRingo123"
+export ERL_AFLAGS="-kernel shell_history enabled -kernel shell_history_file_size 1000000"
 
 #----------
 # unixODBC 
