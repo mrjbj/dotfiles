@@ -26,12 +26,13 @@ badd +4 nvim-astro/lua/user/options.lua
 badd +1 nvim-astro/lua/user/plugins/user.lua
 badd +47 nvim-astro/lua/user/plugins/core.lua
 badd +1 kitty/current-theme.conf
-badd +24 nvim-astro/lua/user/plugins/telescope.lua
-badd +30 nvim-astro/lua/user/mappings.lua
+badd +33 nvim-astro/lua/user/plugins/telescope.lua
+badd +56 nvim-astro/lua/user/mappings.lua
 argglobal
 %argdel
-edit nvim-astro/lua/user/plugins/telescope.lua
+edit nvim-astro/lua/user/mappings.lua
 argglobal
+balt nvim-astro/lua/user/plugins/telescope.lua
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -41,19 +42,26 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-13,18fold
-12,19fold
-10,20fold
-9,21fold
-3,22fold
-1,23fold
+17,19fold
+21,23fold
+29,32fold
+28,34fold
+45,47fold
+61,64fold
+60,65fold
+59,67fold
+72,75fold
+71,76fold
+70,78fold
+15,79fold
+14,81fold
 let &fdl = &fdl
-let s:l = 17 - ((16 * winheight(0) + 27) / 55)
+let s:l = 54 - ((26 * winheight(0) + 27) / 55)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 17
-normal! 0
+keepjumps 54
+normal! 068|
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
