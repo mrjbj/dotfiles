@@ -21,6 +21,11 @@ export LDFLAGS="-L/opt/homebrew/opt/libpq/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/libpq/include"
 
 #----------
+# Deno
+# ----------
+export PATH="/Users/jasonjones/.asdf/installs/deno/1.37.2/.deno/bin:$PATH"
+
+#----------
 # Elixir 
 # asdf where elixir
 #----------

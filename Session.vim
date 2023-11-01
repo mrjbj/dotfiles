@@ -13,6 +13,7 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
+badd +1 ~/GitData/group-me-fun/backend/src/first_steps.ts
 badd +1 ~/GitData/trash/phx_tdd/README.md
 badd +43 ~/GitData/trash/phx_tdd/lib/phx_tdd_web.ex
 badd +1 ~/GitData/trash/phx_tdd/lib/phx_tdd_web/components/core_components.ex
@@ -27,12 +28,12 @@ badd +1 nvim-astro/lua/user/plugins/user.lua
 badd +47 nvim-astro/lua/user/plugins/core.lua
 badd +1 kitty/current-theme.conf
 badd +33 nvim-astro/lua/user/plugins/telescope.lua
-badd +56 nvim-astro/lua/user/mappings.lua
+badd +54 nvim-astro/lua/user/mappings.lua
+badd +24 ~/.dotfiles/nvim-astro/lua/user/plugins/community.lua
 argglobal
 %argdel
 edit nvim-astro/lua/user/mappings.lua
 argglobal
-balt nvim-astro/lua/user/plugins/telescope.lua
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -56,12 +57,12 @@ silent! normal! zE
 15,79fold
 14,81fold
 let &fdl = &fdl
-let s:l = 54 - ((26 * winheight(0) + 27) / 55)
+let s:l = 54 - ((27 * winheight(0) + 27) / 55)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
 keepjumps 54
-normal! 068|
+normal! 01|
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
