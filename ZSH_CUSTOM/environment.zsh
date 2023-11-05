@@ -23,7 +23,7 @@ export CPPFLAGS="-I/opt/homebrew/opt/libpq/include"
 #----------
 # Deno
 # ----------
-export PATH="~/.asdf/installs/deno/1.37.2/.deno/bin:$PATH"
+export PATH="$HOME/.asdf/installs/deno/1.37.2/.deno/bin:$PATH"
 #----------
 # Elixir 
 # asdf where elixir
