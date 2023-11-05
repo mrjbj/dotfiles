@@ -1,16 +1,20 @@
 return {
   "nvim-telescope/telescope.nvim",
-  dependencies = { "nvim-telescope/telescope-file-browser.nvim" },
+  cmd = "Telescope",
+  keys = {
+    "<C-p>",
+    "<C-S-p>",
+    "<C-f>",
+    "<TAB>",
+  },
+  dependencies = {
+    "debugloop/telescope-undo.nvim",
+    "nvim-telescope/telescope-file-browser.nvim",
+  },
   opts = function(_, opts)
-    -- local builtin = require "telescope.builtin"
-    -- local state = require "telescope.actions.state"
-
     local actions = require "telescope.actions"
-    local fb_actions = require("telescope").extensions.file_browser.actions
-
     return require("astronvim.utils").extend_tbl(opts, {
       defaults = {
-        prompt_prefix = " λ  ",
         mappings = {
           i = {
             jk = require("telescope.actions").close,
@@ -20,18 +24,46 @@ return {
             ["<C-p>"] = actions.move_selection_previous,
           },
         },
-      },
-      extensions = {
-        file_browser = {
-          mappings = {
-            i = { ["<C-z>"] = fb_actions.toggle_hidden },
-            n = { z = fb_actions.toggle_hidden },
+        file_ignore_patterns = {
+          "%.jpg",
+          "%.gif",
+          "%.png",
+          "%.tga",
+        },
+        winblend = vim.o.winblend,
+        selection_caret = "  ",
+        layout_config = {
+          width = 0.90,
+          height = 0.85,
+          preview_cutoff = 120,
+          horizontal = {
+            preview_width = 0.6,
+          },
+          vertical = {
+            width = 0.9,
+            height = 0.95,
+            preview_height = 0.5,
+          },
+          flex = {
+            horizontal = {
+              preview_width = 0.9,
+            },
           },
         },
       },
       pickers = {
-        file_browser = {
-          initial_mode = "normal",
+        buffers = {
+          path_display = { "smart" },
+          mappings = {
+            i = {
+              ["<c-d>"] = actions.delete_buffer,
+              ["<Tab>"] = actions.select_default,
+            },
+            n = {
+              ["d"] = actions.delete_buffer,
+              ["<Tab>"] = actions.select_default,
+            },
+          },
         },
       },
     })
@@ -39,6 +71,35 @@ return {
   config = function(...)
     require "plugins.configs.telescope"(...)
     local telescope = require "telescope"
+    telescope.load_extension "undo"
     telescope.load_extension "file_browser"
+    require("astronvim.utils").set_mappings {
+      n = {
+        ["<C-p>"] = { "<cmd>Telescope fd<CR>", desc = "Activates Telescope fd" },
+        ["<C-S-p>"] = {
+          "<cmd>Telescope commands<CR>",
+          desc = "Activates Telescope commands",
+        },
+        ["<C-f>"] = {
+          "<cmd>Telescope live_grep<CR>",
+          desc = "Activates Telescope live_grep",
+        },
+        ["<Tab>"] = {
+          function()
+            if #vim.t.bufs > 1 then
+              require("telescope.builtin").buffers {
+                sort_mru = true,
+                ignore_current_buffer = true,
+              }
+            else
+              require "notify" { "No other buffers open" }
+            end
+          end,
+          desc = "Switch Buffers",
+        },
+        -- ["<C-b>"] = { "<cmd>Telescope file_browser<CR>" },
+        -- ["<C-z>"] = { "<cmd>Telescope undo<CR>" },
+      },
+    }
   end,
 }
