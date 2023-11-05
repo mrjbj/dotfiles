@@ -13,26 +13,11 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +1 ~/GitData/group-me-fun/backend/src/first_steps.ts
-badd +1 ~/GitData/trash/phx_tdd/README.md
-badd +43 ~/GitData/trash/phx_tdd/lib/phx_tdd_web.ex
-badd +1 ~/GitData/trash/phx_tdd/lib/phx_tdd_web/components/core_components.ex
-badd +28 ~/GitData/trash/phx_tdd/lib/phx_tdd_web/endpoint.ex
-badd +3 ~/GitData/trash/phx_tdd/lib/phx_tdd_web/components/layouts.ex
-badd +1 ~/GitData/trash/phx_tdd/lib/phx_tdd_web/components/layouts/app.html.heex
-badd +1 ~/GitData/trash/phx_tdd/lib/phx_tdd_web/components/layouts/root.html.heex
-badd +20 ~/GitData/trash/phx_tdd/lib/phx_tdd_web/router.ex
-badd +75 nvim-astro/lua/user/init.lua
-badd +4 nvim-astro/lua/user/options.lua
-badd +1 nvim-astro/lua/user/plugins/user.lua
-badd +47 nvim-astro/lua/user/plugins/core.lua
-badd +1 kitty/current-theme.conf
-badd +33 nvim-astro/lua/user/plugins/telescope.lua
-badd +54 nvim-astro/lua/user/mappings.lua
-badd +24 ~/.dotfiles/nvim-astro/lua/user/plugins/community.lua
+badd +1 .gitignore
 argglobal
 %argdel
-edit nvim-astro/lua/user/mappings.lua
+$argadd .gitignore
+edit .gitignore
 argglobal
 setlocal fdm=manual
 setlocal fde=0
@@ -43,26 +28,13 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-17,19fold
-21,23fold
-29,32fold
-28,34fold
-45,47fold
-61,64fold
-60,65fold
-59,67fold
-72,75fold
-71,76fold
-70,78fold
-15,79fold
-14,81fold
 let &fdl = &fdl
-let s:l = 54 - ((27 * winheight(0) + 27) / 55)
+let s:l = 1 - ((0 * winheight(0) + 27) / 55)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 54
-normal! 01|
+keepjumps 1
+normal! 011|
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
