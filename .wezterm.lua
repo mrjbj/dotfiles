@@ -10,7 +10,7 @@ config.adjust_window_size_when_changing_font_size = false
 config.automatically_reload_config = true
 config.color_scheme = "Bamboo"
 config.hide_tab_bar_if_only_one_tab = true
-config.leader = { key = "Space", mods = "CTRL|SHIFT" }
+config.leader = { key = "Space", mods = "ALT|SHIFT" }
 config.use_dead_keys = false
 config.warn_about_missing_glyphs = true
 config.command_palette_font_size = 20.0

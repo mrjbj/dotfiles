@@ -18,6 +18,7 @@ alias mg='kitty +kitten hyperlinked_grep --smart-case "$@" '
 
 # Directories
 alias m="mark"
+# alias python="python3"
 #alias j="marks"
 alias dh="dirs -v | head -10"
 alias 1="cd -"

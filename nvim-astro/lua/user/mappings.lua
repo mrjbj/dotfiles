@@ -55,6 +55,14 @@ return {
     ["<leader>r"] = { ":luafile ~/.config/nvim-astro/init.lua<cr>", desc = "Reload config" },
     -- file browser
     ["<leader>fb"] = { "<cmd>Telescope file_browser path=%:p:h select_buffer=true<cr>", desc = "File Browser" },
+    ["<leader>ff"] = {
+      function()
+        require("telescope.builtin").find_files {
+          additional_args = function(args) return vim.list_extend(args, { "--hidden" }) end,
+        }
+      end,
+      desc = "Find words in project files",
+    },
     -- find word in project files, hidden included, .gitignore not
     ["<leader>fw"] = {
       function()

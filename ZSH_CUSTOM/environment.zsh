@@ -15,7 +15,8 @@ export EDITOR=/opt/homebrew/bin/nvim
 #----------
 # Postgres 
 #----------
-export DB_PASSWORD="Ringo!@5";
+export GROUPME_API_KEY="4d4d3a4026e80137fe642e16ecd0c0ec"
+export DB_PASSWORD="Ringo!@5"
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 export LDFLAGS="-L/opt/homebrew/opt/libpq/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/libpq/include"
@@ -78,3 +79,4 @@ export LANG=en_US.UTF-8
 # SSL identity for github
 #-------------------------
 ssh-add ~/.ssh/id_rsa_github
+ssh-add ~/.ssh/dba3_sds
