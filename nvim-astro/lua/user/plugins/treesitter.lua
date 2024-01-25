@@ -7,6 +7,7 @@ return {
       "elixir",
       "heex",
       "eex",
+      "markdown",
     })
   end,
 }

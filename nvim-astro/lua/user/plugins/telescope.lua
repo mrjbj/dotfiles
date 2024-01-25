@@ -4,7 +4,6 @@ return {
   keys = {
     "<C-p>",
     "<C-S-p>",
-    "<C-f>",
     "<TAB>",
   },
   dependencies = {
@@ -69,7 +68,7 @@ return {
     })
   end,
   config = function(...)
-    require "plugins.configs.telescope"(...)
+    require "plugins.configs.telescope" (...)
     local telescope = require "telescope"
     telescope.load_extension "undo"
     telescope.load_extension "file_browser"
@@ -79,10 +78,6 @@ return {
         ["<C-S-p>"] = {
           "<cmd>Telescope commands<CR>",
           desc = "Activates Telescope commands",
-        },
-        ["<C-f>"] = {
-          "<cmd>Telescope live_grep<CR>",
-          desc = "Activates Telescope live_grep",
         },
         ["<Tab>"] = {
           function()
