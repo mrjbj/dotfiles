@@ -1,3 +1,8 @@
+#----------
+# Editor  
+#----------
+export EDITOR=/opt/homebrew/bin/nvim
+
 # these aliases configure direct access w/o having to use the nvims() picker implemented below.
 alias nvim-lazy="NVIM_APPNAME=LazyVim \nvim"
 alias nvim-kick="NVIM_APPNAME=kickstart \nvim"

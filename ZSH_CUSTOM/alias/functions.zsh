@@ -1,5 +1,4 @@
 # zshell functions (alias that take parameters)
- 
 function nvims() {
 	items=("default" "kickstart" "LazyVim" "NvChad" "AstroVim")
 	config=$(printf "%s\n" "${items[@]}" | fzf --prompt="Neovim Config >> " --height=~50% --layout=reverse --border --exit-0)

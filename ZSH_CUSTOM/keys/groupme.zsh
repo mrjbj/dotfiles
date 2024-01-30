@@ -1,0 +1,1 @@
+export GROUPME_API_KEY="4d4d3a4026e80137fe642e16ecd0c0ec"
