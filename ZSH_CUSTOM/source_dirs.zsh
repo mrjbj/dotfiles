@@ -3,7 +3,7 @@
 # Get the directory of the current script
 script_dir="${0:A:h}"
 # subdirectory list
-subdirs=("alias" "config" "keys" "path" "programs" ) # Add your directories here
+subdirs=("alias" "config" "keys" "path" "programs" ) 
 
 for dir in "${subdirs[@]}"; do
     full_path="$script_dir/$dir"
