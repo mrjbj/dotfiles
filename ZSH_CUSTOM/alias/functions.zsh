@@ -31,6 +31,14 @@ mdf() {
         fi
 }
 
+rr() {
+        if [ -n "$1" ]
+        then 
+                grep -r $1
+        else
+              echo "Usage: rr <search-string>" 
+        fi
+}
 j() {
         if [ -n "$1" ]
         then 

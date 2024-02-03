@@ -42,6 +42,7 @@ bindkey -M viins 'jk' vi-cmd-mode
 # put completion cache files out of home directory
 export ZSH_COMPDUMP=$ZSH/cache/completions/.zcompdump-$HOST
 source $ZSH/oh-my-zsh.sh
+
+cd ~/.dotfiles/ZSH_CUSTOM
 cd ~/GitData
 
-. /opt/homebrew/opt/asdf/libexec/asdf.sh

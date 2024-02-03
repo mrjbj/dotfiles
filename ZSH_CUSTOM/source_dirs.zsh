@@ -5,6 +5,7 @@ script_dir="${0:A:h}"
 # subdirectory list
 subdirs=("alias" "config" "keys" "path" "programs" ) 
 
+
 for dir in "${subdirs[@]}"; do
     full_path="$script_dir/$dir"
 
