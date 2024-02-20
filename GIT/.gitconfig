@@ -5,3 +5,5 @@
 	defaultBranch = main
 [credential]
 	help = store
+[merge]
+	conflictstyle = zdiff3

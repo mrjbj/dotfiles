@@ -1,9 +1,9 @@
 #----------
 # Editor  
 #----------
-export EDITOR=/opt/homebrew/bin/nvim
+# export EDITOR=/opt/homebrew/bin/nvim
 export NVIM_SESSION_DIR="$HOME/.cache/vim_sessions"
-
+export EDITOR="nvim -u ~/.dotfiles/nvim-astro/lua/user/init.lua" 
 
 # these aliases configure direct access w/o having to use the nvims() picker implemented below.
 alias nvim-lazy="NVIM_APPNAME=LazyVim \nvim"

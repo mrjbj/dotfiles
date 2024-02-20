@@ -2,10 +2,10 @@
 local wezterm = require("wezterm")
 local act = wezterm.action
 -- setup and return config object
-local config = {}
+-- local config = {}
 
 -- options
-config = wezterm.config_builder()
+local config = wezterm.config_builder()
 config.adjust_window_size_when_changing_font_size = false
 config.automatically_reload_config = true
 config.color_scheme = "Bamboo"
@@ -33,18 +33,18 @@ config.unzoom_on_switch_pane = true
 --keys
 config.keys = {
 	-- Scrolling
-	{ key = "UpArrow", mods = "SHIFT", action = act.ScrollByLine(-15) },
-	{ key = "DownArrow", mods = "SHIFT", action = act.ScrollByLine(15) },
-	{ key = "End", mods = "SHIFT", action = act.ScrollToBottom },
-	{ key = "Home", mods = "SHIFT", action = act.ScrollToTop },
+	{ key = "UpArrow",   mods = "SHIFT",      action = act.ScrollByLine(-15) },
+	{ key = "DownArrow", mods = "SHIFT",      action = act.ScrollByLine(15) },
+	{ key = "End",       mods = "SHIFT",      action = act.ScrollToBottom },
+	{ key = "Home",      mods = "SHIFT",      action = act.ScrollToTop },
 	-- switch between window
-	-- { key = "H",         mods = "CTRL|SHIFT", action = act.ActivateWindowRelative(-1) },
-	-- { key = "L",        mods = "CTRL|SHIFT", action = act.ActivateWindowRelative(1) },
+	{ key = "Tab",       mods = "CTRL",       action = act.ActivateWindowRelative(1) },
+	-- { key = "L",         mods = "CTRL|SHIFT", action = act.ActivateWindowRelative(1) },
 	-- switch panes
-	{ key = "H", mods = "CTRL|SHIFT", action = act.ActivatePaneDirection("Left") },
-	{ key = "L", mods = "CTRL|SHIFT", action = act.ActivatePaneDirection("Right") },
-	{ key = "K", mods = "CTRL|SHIFT", action = act.ActivatePaneDirection("Up") },
-	{ key = "J", mods = "CTRL|SHIFT", action = act.ActivatePaneDirection("Down") },
+	{ key = "H",         mods = "CTRL|SHIFT", action = act.ActivatePaneDirection("Left") },
+	{ key = "L",         mods = "CTRL|SHIFT", action = act.ActivatePaneDirection("Right") },
+	{ key = "K",         mods = "CTRL|SHIFT", action = act.ActivatePaneDirection("Up") },
+	{ key = "J",         mods = "CTRL|SHIFT", action = act.ActivatePaneDirection("Down") },
 	{
 		key = "|",
 		mods = "CTRL|SHIFT",

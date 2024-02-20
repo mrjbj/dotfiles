@@ -11,7 +11,8 @@ return {
         previous_parameter = "<C-h>",
         close_signature = "<A-s>",
       },
-      display_automatically = true, -- Uses trigger characters to automatically display the signature overloads when typing a method signature 0
+      -- Uses trigger characters to automatically display the signature overloads when typing a method signature 0
+      display_automatically = true,
     },
   },
 }

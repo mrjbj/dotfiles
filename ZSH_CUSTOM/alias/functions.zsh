@@ -12,6 +12,16 @@ function nvims() {
 	}
 
 
+function f() {
+  local dir="${2:-.}" # Use second argument as dir, default to HOME if not provided
+  local filespec="$1"
+  if [[ -z "$filespec" ]]; then
+    echo "Usage: findfile <filespec> [directory]"
+    return 1
+  fi
+  echo "Searcing [$dir] for [$filespec]"
+  find $dir -name "*$filespec*"
+}
 
 # jfind uses spotlight index to find files.
 # doesn't work for files that start with a "." since not included in the index. 
@@ -31,7 +41,7 @@ mdf() {
         fi
 }
 
-rr() {
+r() {
         if [ -n "$1" ]
         then 
                 grep -r $1
